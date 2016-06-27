@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#EFEFF1</color>
+    <color name="item_background">#FBFBFB</color>
+    <color name="nav_background">#FBFBFB</color>
+
+    <color name="select_bar_bg">#F3334F</color>
+    <color name="select_bar_textview">#838383</color>
+
+    <color name="divide">#EAEAEA</color>
+
+    <!--TextView-->
+    <color name="item_tv_title">#3C3C3C</color>
+    <color name="item_tv_content">#D9D9D9</color>
+    <color name="item_tv_label">#939393</color>
+
+    <!--nav-->
+    <color name="nav_tv">#A6A6A6</color>
+
+    <!--home-->
+    <color name="tabs_line">#7ab9ff</color>
+</resources>

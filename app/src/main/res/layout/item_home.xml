@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="8dp"
+              android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal"
+                  android:background="@color/item_background">
+
+        <ImageView
+                android:id="@+id/item_home_img"
+                style="@style/ImageView"
+                android:background="@drawable/tab_dingdan_selector"/>
+
+        <LinearLayout
+                style="@style/View"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    style="@style/View"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/item_home_tv_title"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        style="@style/homtItemTextViewTitle"
+                        android:singleLine="true"
+                        android:text="label"/>
+
+                <LinearLayout
+                        android:id="@+id/lin_tabs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/space_middle"
+                        android:orientation="horizontal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    style="@style/View"
+                    android:orientation="horizontal">
+
+                <RatingBar
+                        android:id="@+id/item_home_ratingbar"
+                        style="@style/RatingBar"/>
+
+                <TextView
+                        android:id="@+id/item_home_tv_salenum"
+                        style="@style/homtItemTextViewLabel"
+                        android:layout_weight="1"
+                        android:text="label"/>
+
+                <TextView
+                        android:id="@+id/item_home_tv_address"
+                        style="@style/homtItemTextViewLabel"
+                        android:layout_width="wrap_content"
+                        android:text="label"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    style="@style/View"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/item_home_tv_startprize"
+                        style="@style/homtItemTextViewLabel"
+                        android:layout_width="wrap_content"
+                        android:text="起送¥25"/>
+
+                <TextView
+                        style="@style/homtItemTextViewLabel"
+                        android:layout_width="wrap_content"
+                        android:text="|"/>
+
+                <TextView
+                        android:id="@+id/item_home_tv_sendprize"
+                        style="@style/homtItemTextViewLabel"
+                        android:layout_width="wrap_content"
+                        android:text="配送¥25"/>
+
+                <TextView
+                        style="@style/homtItemTextViewLabel"
+                        android:layout_width="wrap_content"
+                        android:text="|"/>
+
+                <TextView
+                        android:id="@+id/item_home_tv_sendtime"
+                        style="@style/homtItemTextViewLabel"
+                        android:layout_width="wrap_content"
+                        android:text="平均45分钟"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+        <LinearLayout
+                android:id="@+id/lin_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+        <TextView
+                android:id="@+id/tv_coupon_num"
+                style="@style/homtItemTextViewLabel"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:drawableRight="@drawable/wallet_base_indicator_arrow_up"
+                android:drawableEnd="@drawable/wallet_base_indicator_arrow_up"/>
+    </RelativeLayout>
+
+</LinearLayout>

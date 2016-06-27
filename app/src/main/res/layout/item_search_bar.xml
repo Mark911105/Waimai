@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/select_bar_bg"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        style="@style/LinearLayout"
+            android:background="@drawable/home_search_item">
+
+        <ImageView
+            style="@style/ImageView"
+            android:background="@drawable/non_catering_icon_search"
+            />
+
+        <EditText
+            android:id="@+id/et_search"
+            style="@style/SearchEditText"
+            android:hint="@string/search_tv_hint"
+            />
+    </LinearLayout>
+
+</LinearLayout>
